@@ -51,3 +51,7 @@
 2021-02-10 05:04:09,820 INFO [AppThreadPoolExecutor-2] c.i.w.a.JsonWebhookServiceAspect.createAdviceBefore saveAsync service started  - CompletableFuture com.inflife.webhook.services.JsonWebhookServiceImpl.saveAsync(Map)
 2021-02-10 05:04:09,822 INFO [http-nio-8080-exec-2] c.i.w.CorrelationInterceptor.afterCompletion Inbound HTTP request ended 
 2021-02-10 05:04:09,926 INFO [ForkJoinPool.commonPool-worker-3] c.i.w.s.JsonWebhookServiceImpl.lambda$saveAsync$5 finished saving all jsonwebhooks
+2021-02-10 08:33:11,055 INFO [SpringContextShutdownHook] o.s.s.c.ExecutorConfigurationSupport.shutdown Shutting down ExecutorService 'taskExecutor'
+2021-02-10 08:33:11,065 INFO [SpringContextShutdownHook] o.s.o.j.AbstractEntityManagerFactoryBean.destroy Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-10 08:33:11,137 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource.close HikariPool-1 - Shutdown initiated...
+2021-02-10 08:33:12,110 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource.close HikariPool-1 - Shutdown completed.
