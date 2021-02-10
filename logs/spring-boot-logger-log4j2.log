@@ -1,0 +1,53 @@
+2021-02-10 05:03:29,845 INFO [background-preinit] o.h.v.i.u.Version.<clinit> HV000001: Hibernate Validator 6.1.6.Final
+2021-02-10 05:03:29,879 INFO [main] o.s.b.StartupInfoLogger.logStarting Starting EventPlatformApplication on DESKTOP-ECQOOMN with PID 4024 (/home/user/upwork/git/inlife-json-webhook/build/classes/java/main started by user in /home/user/upwork/git/inlife-json-webhook)
+2021-02-10 05:03:29,884 INFO [main] o.s.b.SpringApplication.logStartupProfileInfo The following profiles are active: dev
+2021-02-10 05:03:30,393 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-10 05:03:30,394 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-10 05:03:30,437 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn Finished Spring Data repository scanning in 36ms. Found 1 JPA repository interfaces.
+2021-02-10 05:03:30,597 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-10 05:03:30,598 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-02-10 05:03:30,609 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.inflife.webhook.repositories.jpa.JsonWebhookRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository.
+2021-02-10 05:03:30,609 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn Finished Spring Data repository scanning in 10ms. Found 0 Elasticsearch repository interfaces.
+2021-02-10 05:03:30,613 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-10 05:03:30,614 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-02-10 05:03:30,616 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.inflife.webhook.repositories.jpa.JsonWebhookRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2021-02-10 05:03:30,617 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-02-10 05:03:31,165 INFO [main] o.s.b.w.e.t.TomcatWebServer.initialize Tomcat initialized with port(s): 8080 (http)
+2021-02-10 05:03:31,173 INFO [main] o.a.j.l.DirectJDKLog.log Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-10 05:03:31,174 INFO [main] o.a.j.l.DirectJDKLog.log Starting service [Tomcat]
+2021-02-10 05:03:31,174 INFO [main] o.a.j.l.DirectJDKLog.log Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-10 05:03:31,259 INFO [main] o.a.j.l.DirectJDKLog.log Initializing Spring embedded WebApplicationContext
+2021-02-10 05:03:31,260 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext Root WebApplicationContext: initialization completed in 1333 ms
+2021-02-10 05:03:31,426 INFO [main] o.h.j.i.u.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-10 05:03:31,460 INFO [main] o.h.Version.logVersion HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-02-10 05:03:31,564 INFO [main] o.h.a.c.r.j.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-10 05:03:31,629 INFO [main] c.z.h.HikariDataSource.getConnection HikariPool-1 - Starting...
+2021-02-10 05:03:31,751 INFO [main] c.z.h.HikariDataSource.getConnection HikariPool-1 - Start completed.
+2021-02-10 05:03:31,760 INFO [main] o.h.d.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-10 05:03:34,398 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-10 05:03:34,405 INFO [main] o.s.o.j.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-10 05:03:34,844 INFO [main] o.s.s.c.ExecutorConfigurationSupport.initialize Initializing ExecutorService
+2021-02-10 05:03:34,846 INFO [main] o.s.s.c.ExecutorConfigurationSupport.initialize Initializing ExecutorService 'taskExecutor'
+2021-02-10 05:03:35,576 WARN [main] o.s.d.c.CustomConversions.register Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-02-10 05:03:35,577 WARN [main] o.s.d.c.CustomConversions.register Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-02-10 05:03:35,577 WARN [main] o.s.d.c.CustomConversions.register Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-02-10 05:03:35,578 WARN [main] o.s.d.c.CustomConversions.register Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-02-10 05:03:35,645 INFO [main] o.s.d.e.s.VersionInfo.logVersions Version Spring Data Elasticsearch: 4.0.6.RELEASE
+2021-02-10 05:03:35,645 INFO [main] o.s.d.e.s.VersionInfo.logVersions Version Elasticsearch Client in build: 7.6.2
+2021-02-10 05:03:35,646 INFO [main] o.s.d.e.s.VersionInfo.logVersions Version Elasticsearch Client used: 7.6.2
+2021-02-10 05:03:35,744 INFO [main] o.a.j.l.DirectJDKLog.log Starting ProtocolHandler ["http-nio-8080"]
+2021-02-10 05:03:35,759 INFO [main] o.s.b.w.e.t.TomcatWebServer.start Tomcat started on port(s): 8080 (http) with context path '/api'
+2021-02-10 05:03:35,770 INFO [main] o.s.b.StartupInfoLogger.logStarted Started EventPlatformApplication in 6.269 seconds (JVM running for 6.888)
+2021-02-10 05:03:35,772 INFO [main] c.i.w.EventPlatformApplication.lambda$printSomeProps$0 user.timezone : UTC
+2021-02-10 05:03:35,773 INFO [main] c.i.w.EventPlatformApplication.lambda$printSomeProps$0 spring.datasource.url = jdbc:mysql://localhost:3306/inlifedev?useSSL=false
+2021-02-10 05:03:47,526 INFO [http-nio-8080-exec-1] o.a.j.l.DirectJDKLog.log Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-10 05:03:47,526 INFO [http-nio-8080-exec-1] o.s.w.s.FrameworkServlet.initServletBean Initializing Servlet 'dispatcherServlet'
+2021-02-10 05:03:47,535 INFO [http-nio-8080-exec-1] o.s.w.s.FrameworkServlet.initServletBean Completed initialization in 9 ms
+2021-02-10 05:03:47,548 INFO [http-nio-8080-exec-1] c.i.w.CorrelationInterceptor.preHandle CorrelationId: 6fab3569-9a72-4981-9471-8a100c84b678
+2021-02-10 05:03:47,637 INFO [AppThreadPoolExecutor-1] c.i.w.a.JsonWebhookServiceAspect.createAdviceBefore saveAsync service started  - CompletableFuture com.inflife.webhook.services.JsonWebhookServiceImpl.saveAsync(Map)
+2021-02-10 05:03:47,643 INFO [http-nio-8080-exec-1] c.i.w.CorrelationInterceptor.afterCompletion Inbound HTTP request ended 
+2021-02-10 05:03:51,515 INFO [ForkJoinPool.commonPool-worker-3] c.i.w.s.JsonWebhookServiceImpl.lambda$saveAsync$5 finished saving all jsonwebhooks
+2021-02-10 05:04:09,800 INFO [http-nio-8080-exec-2] c.i.w.CorrelationInterceptor.preHandle CorrelationId: 6fab3569-9a72-4981-9471-8a100c84b678
+2021-02-10 05:04:09,820 INFO [AppThreadPoolExecutor-2] c.i.w.a.JsonWebhookServiceAspect.createAdviceBefore saveAsync service started  - CompletableFuture com.inflife.webhook.services.JsonWebhookServiceImpl.saveAsync(Map)
+2021-02-10 05:04:09,822 INFO [http-nio-8080-exec-2] c.i.w.CorrelationInterceptor.afterCompletion Inbound HTTP request ended 
+2021-02-10 05:04:09,926 INFO [ForkJoinPool.commonPool-worker-3] c.i.w.s.JsonWebhookServiceImpl.lambda$saveAsync$5 finished saving all jsonwebhooks

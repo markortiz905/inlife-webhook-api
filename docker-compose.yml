@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  mysql:
+    image: mysql:8.0.22
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_DATABASE=inlifedev
+    command: --init-file /init.sql
+    volumes:
+      - ./init.sql:/init.sql
+  arena-service-api:
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - ./build/libs/:/opt/app/
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/nextrun2?useSSL=false
+      SERVER_PORT: 8081
+    depends_on:
+      - mysql
+    entrypoint: java -jar /opt/app/arena-event-api.jar
