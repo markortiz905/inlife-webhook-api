@@ -27,6 +27,8 @@ import org.springframework.retry.annotation.EnableRetry;
 public class EventPlatformApplication {
 
 	public static void main(String[] args) {
+		log.info("SPRING_DATASOURCE_URL: " + System.getenv("SPRING_DATASOURCE_URL"));
+		log.info("SPRING_DATASOURCE_URL:" + System.getenv("SPRING_DATASOURCE_USERNAME"));
 		SpringApplication.run(EventPlatformApplication.class, args);
 	}
 
