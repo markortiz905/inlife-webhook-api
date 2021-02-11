@@ -72,7 +72,7 @@ public class JsonWebhookServiceImpl implements JsonWebhookService {
                 } catch (Exception e) {}
             });
             try {
-                hooks.setJsonString(mapper.writeValueAsString(object));
+                hooks.setJsonString(mapper.writeValueAsString(obj));
             } catch (JsonProcessingException e) {
                 e.printStackTrace();
             }
