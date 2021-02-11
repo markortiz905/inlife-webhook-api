@@ -41,6 +41,12 @@ public class JsonWebhook {
     private String suburb;
     private String expectedTimeToOnboard;
 
+    @JsonFormat
+            (shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+    private LocalDate dateCreated;
+    @JsonFormat
+            (shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+    private LocalDate dateUpdated;
 
     @Column(name = "jsonObject", columnDefinition = "json")
     @JsonRawValue
