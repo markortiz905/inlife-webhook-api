@@ -36,7 +36,7 @@ public class JsonWebhook {
     private LocalDate dateOpened;
     private String status;
     private String natureOfDisability;
-    @Column(name="your_column_name",columnDefinition="LONGTEXT")
+    @Column(columnDefinition="LONGTEXT")
     private String supportsRequiredDescription;
     private String suburb;
     private String expectedTimeToOnboard;
