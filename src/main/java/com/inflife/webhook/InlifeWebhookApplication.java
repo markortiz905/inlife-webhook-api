@@ -14,7 +14,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.retry.annotation.EnableRetry;
 
 /**
  * @author Mark Anthony Ortiz - ortizmark905@gmail.com
@@ -24,12 +23,12 @@ import org.springframework.retry.annotation.EnableRetry;
 @EnableJpaRepositories
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 @SpringBootApplication
-public class EventPlatformApplication {
+public class InlifeWebhookApplication {
 
 	public static void main(String[] args) {
 		log.info("SPRING_DATASOURCE_URL: " + System.getenv("SPRING_DATASOURCE_URL"));
 		log.info("SPRING_DATASOURCE_URL:" + System.getenv("SPRING_DATASOURCE_USERNAME"));
-		SpringApplication.run(EventPlatformApplication.class, args);
+		SpringApplication.run(InlifeWebhookApplication.class, args);
 	}
 
 	@Bean
