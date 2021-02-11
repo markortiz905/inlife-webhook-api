@@ -1,6 +1,7 @@
 package com.inflife.webhook.controllers;
 
 import com.inflife.webhook.common.JsonWebhookMapper;
+import com.inflife.webhook.common.SuccessResponse;
 import com.inflife.webhook.entities.JsonWebhook;
 import com.inflife.webhook.exception.BadRequestServiceException;
 import com.inflife.webhook.exception.ServiceException;
@@ -41,8 +42,10 @@ public class JsonWebhookController {
     }
 
     @PostMapping("/webhook/v2")
-    ResponseEntity<List<JsonWebhook>> createV2(@RequestBody Map<String, Object> object) throws ServiceException, BadRequestServiceException {
+    ResponseEntity<SuccessResponse> createV2(@RequestBody Map<String, Object> object) throws ServiceException, BadRequestServiceException {
         jsonWebhookService.saveAsync(object);
-        return ResponseEntity.ok().build();
+        SuccessResponse response = new SuccessResponse();
+        response.setStatus("success");
+        return ResponseEntity.ok(response);
     }
 }
