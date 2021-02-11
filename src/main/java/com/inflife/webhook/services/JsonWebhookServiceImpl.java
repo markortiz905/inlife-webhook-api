@@ -1,5 +1,6 @@
 package com.inflife.webhook.services;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.inflife.webhook.entities.JsonWebhook;
 import com.inflife.webhook.exception.BadRequestServiceException;
@@ -70,11 +71,11 @@ public class JsonWebhookServiceImpl implements JsonWebhookService {
                     }
                 } catch (Exception e) {}
             });
-            /*try {
+            try {
                 hooks.setJsonString(mapper.writeValueAsString(object));
             } catch (JsonProcessingException e) {
                 e.printStackTrace();
-            }*/
+            }
             return hooks;
         }).collect(Collectors.toList()))
                 .thenAccept(result -> jsonWebhookRepository.saveAll(result))
