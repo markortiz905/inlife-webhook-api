@@ -43,7 +43,7 @@ public class JsonWebhookServiceImpl implements JsonWebhookService {
     @Async
     public CompletableFuture<Void> saveAsync(Map<String, Object> object) throws ServiceException, BadRequestServiceException {
         List<Object> objects = (List<Object>)object.get("items");
-        return CompletableFuture.supplyAsync(() -> objects.stream().map(obj -> {
+        return CompletableFuture.supplyAsync(() -> objects.parallelStream().map(obj -> {
             JsonWebhook hooks = new JsonWebhook();
             Long id = Long.valueOf(((Integer)((Map<String, Object>)obj).get("item_id")).toString());
             boolean exist = jsonWebhookRepository.existsById(id);
