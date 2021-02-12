@@ -47,6 +47,11 @@ public class JsonWebhookServiceImpl implements JsonWebhookService {
             JsonWebhook hooks = new JsonWebhook();
             Long id = Long.valueOf(((Integer)((Map<String, Object>)obj).get("item_id")).toString());
             boolean exist = jsonWebhookRepository.existsById(id);
+            log.info("id found? " + exist);
+            if (!exist) {
+                hooks.setDateCreated(LocalDate.now());
+            }
+            hooks.setDateUpdated(LocalDate.now());
             hooks.setId(id);
             List<Object> fields = (List<Object>)((Map<String, Object>) obj).get("fields");
             fields.stream().forEach( f -> {
@@ -78,10 +83,6 @@ public class JsonWebhookServiceImpl implements JsonWebhookService {
             } catch (JsonProcessingException e) {
                 e.printStackTrace();
             }
-            if (!exist) {
-                hooks.setDateCreated(LocalDate.now());
-            }
-            hooks.setDateUpdated(LocalDate.now());
             return hooks;
         }).collect(Collectors.toList()))
                 .thenAccept(result -> jsonWebhookRepository.saveAll(result))
