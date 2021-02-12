@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.web.filter.CommonsRequestLoggingFilter;
 
 /**
  * @author Mark Anthony Ortiz - ortizmark905@gmail.com
@@ -29,6 +30,19 @@ public class InlifeWebhookApplication {
 		log.info("SPRING_DATASOURCE_URL: " + System.getenv("SPRING_DATASOURCE_URL"));
 		log.info("SPRING_DATASOURCE_URL:" + System.getenv("SPRING_DATASOURCE_USERNAME"));
 		SpringApplication.run(InlifeWebhookApplication.class, args);
+	}
+
+	@Bean
+	@Profile("dev")
+	public CommonsRequestLoggingFilter logFilter() {
+		CommonsRequestLoggingFilter filter
+				= new CommonsRequestLoggingFilter();
+		filter.setIncludeQueryString(true);
+		filter.setIncludePayload(true);
+		filter.setMaxPayloadLength(100);
+		filter.setIncludeHeaders(true);
+		filter.setAfterMessagePrefix("REQUEST DATA : ");
+		return filter;
 	}
 
 	@Bean
