@@ -1,4 +1,4 @@
-package com.inflife.webhook;
+package com.inlife.webhook;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

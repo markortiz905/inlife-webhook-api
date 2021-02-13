@@ -1,7 +1,7 @@
-package com.inflife.webhook.common;
+package com.inlife.webhook.common;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.inflife.webhook.entities.JsonWebhook;
+import com.inlife.webhook.entities.JsonWebhook;
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.JsonPath;
 import com.mysql.cj.xdevapi.JsonArray;

@@ -1,4 +1,4 @@
-package com.inflife.webhook.common;
+package com.inlife.webhook.common;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

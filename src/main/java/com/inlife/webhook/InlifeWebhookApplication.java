@@ -1,4 +1,4 @@
-package com.inflife.webhook;
+package com.inlife.webhook;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -56,8 +56,8 @@ public class InlifeWebhookApplication {
 						.license(new License().name("Apache 2.0").url("http://springdoc.org")));
 	}
 
-	@Bean
-	@Profile({"dev", "test"})
+	//@Bean
+	//@Profile({"dev", "test"})
 	public CommandLineRunner printSomeProps(@Value("${spring.datasource.url}") String dbUrl, OpenAPI openAPI) {
 		return (arg) -> {
 			log.info("user.timezone : " + System.getProperty("user.timezone"));

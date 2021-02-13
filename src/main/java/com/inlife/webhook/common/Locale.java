@@ -1,7 +1,7 @@
 /*
  *
  */
-package com.inflife.webhook.common;
+package com.inlife.webhook.common;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;

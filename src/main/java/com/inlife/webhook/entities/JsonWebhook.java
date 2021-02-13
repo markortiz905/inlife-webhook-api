@@ -1,4 +1,4 @@
-package com.inflife.webhook.entities;
+package com.inlife.webhook.entities;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -6,10 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonRawValue;
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 /**
@@ -37,6 +34,7 @@ public class JsonWebhook {
     private String status;
     private String natureOfDisability;
     @Column(columnDefinition="LONGTEXT")
+    @Lob
     private String supportsRequiredDescription;
     private String suburb;
     private String expectedTimeToOnboard;

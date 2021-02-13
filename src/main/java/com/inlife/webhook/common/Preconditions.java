@@ -1,4 +1,4 @@
-package com.inflife.webhook.common;
+package com.inlife.webhook.common;
 
 public class Preconditions {
     public static void checkArgument(boolean var0) {

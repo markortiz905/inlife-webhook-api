@@ -1,4 +1,4 @@
-package com.inflife.webhook.common;
+package com.inlife.webhook.common;
 
 import java.util.regex.Pattern;
 

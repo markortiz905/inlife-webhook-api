@@ -1,4 +1,4 @@
-package com.inflife.webhook.common;
+package com.inlife.webhook.common;
 
 public class StringUtils {
     public static String trimToNull(String str) {

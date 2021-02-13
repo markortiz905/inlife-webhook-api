@@ -1,11 +1,9 @@
-package com.inflife.webhook.repositories.jpa;
+package com.inlife.webhook.repositories.jpa;
 
-import com.inflife.webhook.entities.JsonWebhook;
+import com.inlife.webhook.entities.JsonWebhook;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-
-import java.util.List;
 
 /**
  * @author mark ortiz
